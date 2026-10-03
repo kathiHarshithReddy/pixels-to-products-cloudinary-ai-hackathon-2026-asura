@@ -2,25 +2,27 @@
 
 **AI-powered media moderation & auto-organization pipeline**
 
-Built for the **Pixels to Products — Cloudinary AI Hackathon 2026** (Track 1: AI Media Pipelines)
+Built for the **Pixels to Products — Cloudinary AI Hackathon 2026**  
+**Track**: PS-01 · AI Media Pipelines  
+**Team**: Asura
 
 ---
 
 ## Problem
 
-User-generated content platforms face major challenges in moderating and organizing large volumes of uploaded images. Manual review is slow, expensive, and inconsistent. There is a clear need for an automated system that can instantly analyze, tag, optimize, and organize media at scale.
+User-generated content platforms struggle with moderating and organizing large volumes of uploaded images. Manual review is slow, expensive, and inconsistent. There is a clear need for an automated system that can instantly analyze, optimize, and organize media at scale.
 
 ## Solution
 
-**AsuraGuard** is an AI-powered media pipeline that uses Cloudinary to automatically process uploaded images. When a user uploads media, Cloudinary handles optimization, delivery, and organization, creating a clean and searchable gallery.
+**AsuraGuard** is an AI-powered media pipeline built on Cloudinary. Users can upload images, and Cloudinary automatically optimizes, crops, and organizes them into a clean, searchable gallery.
 
 ### Key Features
 
-- Drag & drop image upload
+- Drag & drop / multi-image upload
 - Automatic image optimization (`f_auto`, `q_auto`)
-- Smart content-aware cropping
-- Clean and responsive dashboard
-- Real-time media management using Cloudinary
+- Smart content-aware cropping (`gravity: auto`)
+- Clean and responsive media dashboard
+- Real-time media management powered by Cloudinary
 
 ---
 
@@ -28,7 +30,7 @@ User-generated content platforms face major challenges in moderating and organiz
 
 - **Frontend**: Next.js 15 (App Router) + TypeScript
 - **Styling**: Tailwind CSS
-- **Media Platform**: Cloudinary
+- **Media Platform**: Cloudinary + next-cloudinary
 - **Deployment**: Vercel
 
 ---
@@ -37,12 +39,12 @@ User-generated content platforms face major challenges in moderating and organiz
 
 Cloudinary is the core of this project:
 
-- **Upload API** – Handles media ingestion
-- **Image Transformations** – Automatic optimization and smart cropping
-- **Delivery** – Optimized image delivery with `f_auto` and `q_auto`
+- **Upload API** – Handles media ingestion via unsigned upload preset
+- **Image Transformations** – Automatic format & quality optimization + content-aware cropping
+- **Delivery** – Optimized image delivery using `f_auto` and `q_auto`
 - **Media Management** – Stores and organizes all uploaded assets
 
-This project uses Cloudinary as an active part of the product, not just for static storage.
+This project uses Cloudinary as an **active part of the product**, not just for static storage.
 
 ---
 
@@ -57,5 +59,5 @@ This project uses Cloudinary as an active part of the product, not just for stat
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/HackIndiaXYZ/pixels-to-products-cloudinary-ai-hackathon-2026-asura.git
+git clone https://github.com/kathiHarshithReddy/pixels-to-products-cloudinary-ai-hackathon-2026-asura.git
 cd pixels-to-products-cloudinary-ai-hackathon-2026-asura
